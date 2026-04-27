@@ -138,6 +138,11 @@ SARA performs a mental simulation of two worlds:
 If the end states diverge significantly, the actions are order-sensitive.  
 If that sensitivity violates a compliance manifold, SARA triggers intervention.
 
+Example:
+- **Low Residual ($\approx 0$)**: `Query balance` $\cdot$ `Print the bill` $\approx$ `Print the bill` $\cdot$ `Query balance`（Order-insensitive and secure）
+- **High Residual ($\gg 0$)**: `Transfer` $\cdot$ `Risk Verification` $\neq$ `Risk Verification` $\cdot$ `Transfer`（Extremely order-sensitive, must be intercepted）
+
+
 This is where NARH becomes operational:
 not as abstract math, but as a deterministic compliance control layer.
 
